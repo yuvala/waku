@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+    <title>UV</title>
+    <link href="/css/style.css" type="text/css" rel="stylesheet">
+    <script data-main="js/app" src="js/lib/require.js"></script> 
+   
+</head>
+<body>
+<h2>waku</h2>
+<a href="http://ec2-52-35-16-81.us-west-2.compute.amazonaws.com:9090/api/user/test">start</a>
+<a href="/myMath">testAjax.sendAjax()</a>
+<a href="#" onclick="testAjax.sendAjax()">dd</a>
+ 
+
+<div id="past_messages" style="border:1px red solid; min-height:100px; overflow:auto; height: 157px;"></div>
+  
+<div id="wrapper">
+    <div id="messages_wrapper">
+        <ul id="messages"></ul>
+    </div>
+    
+    <form action="">
+        <input id="nameField" type="text" class="name" placeholder="Your name" />
+        <input id="textField" class="message_content" autocomplete="off" placeholder="Type your message here" />
+        <button>Send</button>
+    </form>
+ 
+</div>
+ 
+  
+ 
+</body>
+</html>

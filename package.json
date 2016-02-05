@@ -1,0 +1,14 @@
+{
+  "name": "waku_example",
+  "description": "chat socket.io",
+  "private": true,
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "express": "^4.13.3",
+    "firebase": "^2.3.2",
+    "method-override": "^2.3.5",
+    "morgan": "^1.6.1",
+    "path": "^0.12.7",
+    "socket.io": "^1.2.1"
+  }
+}
