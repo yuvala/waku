@@ -5,7 +5,7 @@
     the #user-name input field, and put the updated users array back to the local
     storage.
      */
-define(['myMath/views/AddView', 'myMath/models/User'], function(AddView, User){
+define(['myMath/views/AddView', 'myMath/models/User','myMath/services/AjaxService'], function(AddView, User, AjaxService){
 
     function start(){
         AddView.render();
@@ -18,6 +18,7 @@ define(['myMath/views/AddView', 'myMath/models/User'], function(AddView, User){
             var userName = document.getElementById('user-name').value;
             users.push(new User(userName));
             localStorage.users = JSON.stringify(users);
+            AjaxService.start();
             window.location.hash = '#list';
             //to see result, require the ListController to execute its start
 

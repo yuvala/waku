@@ -8,7 +8,7 @@
 // Display the users from the local storage by passing it to render function.
 // 1.inject in the #app element a list
 // 2. display
-    define(function(){
+define(function(){
     function render(parameters){
         var appDiv = document.getElementById('app');
         var users = parameters.users;

@@ -111,3 +111,8 @@ require(['myMath/models/User', 'router'], function(User, Router){
 
     Router.startRouting();
 });
+require(['myMath/services/AjaxService'], function(AjaxService){
+    //error: alerter("In main");
+    console.log("main: trying  AjaxService...");
+
+});
